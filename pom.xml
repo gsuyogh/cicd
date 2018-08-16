@@ -15,7 +15,7 @@
 
 		<app.runtime>4.1.2</app.runtime>
 		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
-	    <github.maven.repository>https://github.com/gsuyogh/cicd/</github.maven.repository>
+	    <github.maven.repository>https://github.com/gsuyogh/cicd.git</github.maven.repository>
 	</properties>
 
 	
@@ -104,6 +104,7 @@
   	<repository>
   		<id>maven-repository</id>
   		<url>${github.maven.repository}</url>
+		<layout>default</layout>
   	</repository>
   </distributionManagement>
 </project>
