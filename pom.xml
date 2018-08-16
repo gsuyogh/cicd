@@ -19,9 +19,7 @@
 	</properties>
 
 	
-	<profiles>
-	<profile>
-		<id>cloudhub</id>
+	
 		<build>
 			<plugins>
 				<plugin>
@@ -33,28 +31,18 @@
         <cloudHubDeployment>
             <uri>https://anypoint.mulesoft.com</uri>
             <muleVersion>4.1.2</muleVersion>
-            <username>${anypoint.username}</username>
-            <password>${anypoint.password}</password>
+            <username>${username}</username>
+            <password>${password}</password>
             <applicationName>cicd</applicationName>
             <environment>Sandbox</environment>
             
         </cloudHubDeployment>
-    </configuration>
+    </configuration>					
 					
-					<executions>
-						<execution>
-							<id>deploy</id>
-							<phase>deploy</phase>
-							<goals>
-								<goal>deploy</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 			</plugins>
 		</build>
-	</profile>
-	 </profiles>
+	
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
