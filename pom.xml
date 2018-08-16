@@ -15,7 +15,7 @@
 
 		<app.runtime>4.1.2</app.runtime>
 		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
-	    <github.maven.repository>file:///D:\Wintrust\New folder\cicdsample\cicd-master\cicd-master\</github.maven.repository>
+	    <github.maven.repository>https://github.com/gsuyogh/cicd/</github.maven.repository>
 	</properties>
 
 	
