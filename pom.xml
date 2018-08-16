@@ -37,9 +37,7 @@
             <password>Password123</password>
             <applicationName>cicd</applicationName>
             <environment>Sandbox</environment>
-            <properties>
-                <key>value</key>
-            </properties>
+            
         </cloudHubDeployment>
     </configuration>
 					
