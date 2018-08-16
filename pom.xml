@@ -20,14 +20,32 @@
 
 	<build>
 		<plugins>
+			
+			
 			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-				</configuration>
-			</plugin>
+    <groupId>org.mule.tools.maven</groupId>
+    <artifactId>mule-maven-plugin</artifactId>
+    <version>${mule.maven.plugin.version}</version>
+	<extensions>true</extensions>
+    <configuration>
+        <deploymentType>cloudhub</deploymentType>
+         <!-- muleVersion is the runtime version as it appears on the CloudHub interface -->
+        <muleVersion>3.8.5</muleVersion>
+        <username>mulesuyogh4</username>
+        <password>Password123</password>
+        <redeploy>true</redeploy>
+        <environment>Sandbox</environment>
+    </configuration>
+    <executions>
+        <execution>
+            <id>deploy</id>
+            <phase>deploy</phase>
+            <goals>
+                <goal>deploy</goal>
+            </goals>
+        </execution>
+    </executions>
+</plugin>
 		</plugins>
 	</build>
 	
