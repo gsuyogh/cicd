@@ -19,7 +19,7 @@
 	</properties>
 
 	
-	
+	<profiles>
 	<profile>
 		<id>cloudhub</id>
 		<build>
@@ -49,7 +49,7 @@
 			</plugins>
 		</build>
 	</profile>
-	
+	 </profiles>
 	<dependencies>
         <dependency>
             <groupId>org.mule.connectors</groupId>
