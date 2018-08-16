@@ -28,7 +28,7 @@
 					<groupId>org.mule.tools.maven</groupId>
 					<artifactId>mule-maven-plugin</artifactId>
 					<version>${mule.maven.plugin.version}</version>
-					<extension>true</extension>
+					<extensions>true</extensions>
 					<configuration>
 						<deploymentType>cloudhub</deploymentType>
 						<username>mulesuyogh4</username>
