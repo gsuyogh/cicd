@@ -5,7 +5,7 @@
 	<groupId>src.main</groupId>
 	<artifactId>cicd</artifactId>
     <version>1.0.0</version>
-  <packaging>pom</packaging>
+  <packaging>mule</packaging>
 
 	<name>cicdsample</name>
 
@@ -28,6 +28,7 @@
 					<groupId>org.mule.tools.maven</groupId>
 					<artifactId>mule-maven-plugin</artifactId>
 					<version>${mule.maven.plugin.version}</version>
+					<extension>true</extension>
 					<configuration>
 						<deploymentType>cloudhub</deploymentType>
 						<username>mulesuyogh4</username>
