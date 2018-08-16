@@ -15,6 +15,7 @@
 
 		<app.runtime>4.1.2</app.runtime>
 		<mule.maven.plugin.version>3.1.6</mule.maven.plugin.version>
+	    <github.maven.repository>file:///D:\Wintrust\New folder\cicdsample\cicdsample</github.maven.repository>
 	</properties>
 
 	<build>
@@ -78,13 +79,9 @@
         </pluginRepository>
     </pluginRepositories>
 <distributionManagement>
-    <repository>
-      <uniqueVersion>false</uniqueVersion>
-      <id>corp1</id>
-      <name>Corporate Repository</name>
-      <url>https://github.com/gsuyogh/cicd</url>
-      <layout>default</layout>
-    </repository>   
-
+  	<repository>
+  		<id>maven-repository</id>
+  		<url>${github.maven.repository}</url>
+  	</repository>
   </distributionManagement>
 </project>
