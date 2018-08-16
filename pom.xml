@@ -30,13 +30,19 @@
 					<version>${mule.maven.plugin.version}</version>
 					<extensions>true</extensions>
 					<configuration>
-						<deploymentType>cloudhub</deploymentType>
-						<username>mulesuyogh4</username>
-						<password>Password123</password>
-						<applicationName>${project.artifactId}</applicationName>
-						<environment>Sandbox</environment>						
-						<uri>https://anypoint.mulesoft.com</uri>
-					</configuration>
+        <cloudHubDeployment>
+            <uri>https://anypoint.mulesoft.com</uri>
+            <muleVersion>4.1.2</muleVersion>
+            <username>mulesuyogh4</username>
+            <password>Password123</password>
+            <applicationName>cicd</applicationName>
+            <environment>Sandbox</environment>
+            <properties>
+                <key>value</key>
+            </properties>
+        </cloudHubDeployment>
+    </configuration>
+					
 					<executions>
 						<execution>
 							<id>deploy</id>
