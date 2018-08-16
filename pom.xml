@@ -34,7 +34,7 @@
             <username>${username}</username>
             <password>${password}</password>
             <applicationName>${project.artifactId}</applicationName>
-            <environment>Development</environment>
+            <environment>Sandbox</environment>
             
         </cloudHubDeployment>
     </configuration>					
