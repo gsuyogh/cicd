@@ -30,35 +30,7 @@
 		</plugins>
 	</build>
 	
-	<profile>
-		<id>cloudhub</id>
-		<build>
-			<plugins>
-				<plugin>
-					<groupId>org.mule.tools.maven</groupId>
-					<artifactId>mule-maven-plugin</artifactId>
-					<version>${mule.maven.plugin.version}</version>
-					<configuration>
-						<deploymentType>cloudhub</deploymentType>
-						<username>mulesuyogh4</username>
-						<password>Password123</password>
-						<applicationName>${artifactId}</applicationName>
-						<environment>Sandbox</environment>						
-						<uri>https://anypoint.mulesoft.com</uri>
-					</configuration>
-					<executions>
-						<execution>
-							<id>deploy</id>
-							<phase>deploy</phase>
-							<goals>
-								<goal>deploy</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
-			</plugins>
-		</build>
-	</profile>
+	
 	
 	<dependencies>
         <dependency>
