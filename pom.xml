@@ -33,7 +33,7 @@
             <muleVersion>4.1.2</muleVersion>
             <username>${username}</username>
             <password>${password}</password>
-            <applicationName>cicd</applicationName>
+            <applicationName>${project.artifactId}</applicationName>
             <environment>Sandbox</environment>
             
         </cloudHubDeployment>
