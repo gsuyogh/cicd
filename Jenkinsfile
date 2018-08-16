@@ -14,7 +14,7 @@ pipeline {
  	stage ('Deploy'){
  		steps {
  		
- 				bat 'mvn -f pom.xml package deploy  -Dusername=$ANYPOINT_USR -Dpassword=$ANYPOINT_PSW -Denvironment=Development -DmuleDeploy'
+ 				bat 'mvn -f pom.xml package deploy  -Dusername=mulesuyogh4 -Dpassword=Password123 -Denvironment=Sandbox -DmuleDeploy'
  			
  		}
  	}
