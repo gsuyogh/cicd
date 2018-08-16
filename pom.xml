@@ -32,7 +32,7 @@
 						<deploymentType>cloudhub</deploymentType>
 						<username>mulesuyogh4</username>
 						<password>Password123</password>
-						<applicationName>${artifactId}</applicationName>
+						<applicationName>${project.artifactId}</applicationName>
 						<environment>Sandbox</environment>						
 						<uri>https://anypoint.mulesoft.com</uri>
 					</configuration>
