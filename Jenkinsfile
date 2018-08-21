@@ -12,7 +12,7 @@ pipeline {
  	
     stage ('Publish') {
       steps {
-        nexusPublisher nexusInstanceId: 'nexusserver', nexusRepositoryId: 'WintrustRepo', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: '\\my\\app\\cicd\\1.0.0\\cicd-1.0.0-mule-application.jar']], mavenCoordinate: [artifactId: 'cicd-jar', groupId: 'win.middleware.main', packaging: 'jar', version: '1.0']]]
+        nexusPublisher nexusInstanceId: 'nexusserver', nexusRepositoryId: 'WintrustRepo', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'C:\\Windows\\system32\\config\\systemprofile\\.m2\\repository\\my\\app\\cicd\\1.0.0\\cicd-1.0.0-mule-application.jar']], mavenCoordinate: [artifactId: 'cicd-jar', groupId: 'win.middleware.main', packaging: 'jar', version: '1.0']]]
       }
     }
  }
