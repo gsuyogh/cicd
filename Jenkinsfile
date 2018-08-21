@@ -8,6 +8,7 @@ pipeline {
  			
  		}
  	}
+    
  	stage ('Deploy'){
     environment {
         ANYPOINT_CREDENTIALS = credentials('anypoint.credentials')
@@ -18,8 +19,10 @@ pipeline {
  			
  		}
  	}
-    stage('Publish') {
-    nexusPublisher nexusInstanceId: 'nexusserver', nexusRepositoryId: 'WintrustRepo', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'test\\target\\cicd-1.0.0-mule-application.jar']], mavenCoordinate: [artifactId: 'cicd-jar', groupId: 'win.middleware.main', packaging: 'jar', version: '1.0']]]
-   }
+    stage ('Publish') {
+      steps {
+        nexusPublisher nexusInstanceId: 'nexusserver', nexusRepositoryId: 'WintrustRepo', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'test\\target\\cicd-1.0.0-mule-application.jar']], mavenCoordinate: [artifactId: 'cicd-jar', groupId: 'win.middleware.main', packaging: 'jar', version: '1.0']]]
+      }
+    }
  }
 }
